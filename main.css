@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    font-family: 'Lobster Two', sans-serif;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: darkgray;
+    font-size: 60px;
+}
+.keycode-num  {
+    font-family: 'Lobster Two', sans-serif;
+    visibility: hidden;
+}
+p {
+    margin-top: 10px;
+    font-size: 30px;
+}
+.keycode-boxes {
+    flex-wrap: wrap;
+    align-self: center;
+    visibility: hidden;
+}
+
+#box {
+    flex-wrap: wrap;
+    width: 200px;
+    height: 90px;
+    background-color:rgb(189, 168, 189) ;
+    border: 2px solid antiquewhite;
+}
+@media (min-width: 921px){
+    .keycode-boxes > .keycode-col{
+        width: 33.3333%;
+        float: left;
+    }
+}
